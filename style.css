@@ -1,11 +1,36 @@
 :root {
-    --bg: #1a1a1a;
+    /* --bg: #1a1a1a; */
+    --bg: #0c120c;
     /* --text: #EDE6E3; */
-    --text: #DADAD9;
+    --text: #c20114;
     /* --card-bg: #2a2a2a; */
-    --card-bg: #1B2CC1;
+    --card-bg: #00a7ff;
     /* --link-color: #56E39F; */
 
+    --primary: #00a7ff;
+--primary-content: #ffffff;
+--primary-dark: #0086cc;
+--primary-light: #33b9ff;
+
+--secondary: #ff5800;
+--secondary-content: #ffffff;
+--secondary-dark: #cc4600;
+--secondary-light: #ff7933;
+
+--background: #181a1b;
+--foreground: #232729;
+--border: #3b4145;
+
+--copy: #fbfbfb;
+--copy-light: #d6dadc;
+--copy-lighter: #9fa8ac;
+
+--success: #00ff00;
+--warning: #ffff00;
+--error: #ff0000;
+--success-content: #000000;
+--warning-content: #000000;
+--error-content: #ffffff;
 }
 
 [data-theme="light"] {
@@ -20,8 +45,8 @@ body {
     /* justify-content: center; */
     /* align-items: center; */
     /* max-height: 100vh; */
-    background-color: var(--bg);
-    color: var(--text);
+    background-color: var(--background);
+    color: var(--copy);
 
 }
 
@@ -40,11 +65,60 @@ section {
 .wrapper > section {
     width: 100%;
 }
-.card {
-    background-color: var(--card-bg);
+section.card {
+    /* background-color: var(--card-bg); */
+    background-color: var(--foreground);
+    max-width: 800px;
+    margin: 0.5em auto;
+    padding: 20px 0;
+    text-align: left;
+    border-color: var(--border);
+    border: 5px;
+}
+section.card > div {
+  margin-left: 100px;
+}
+section.card > h2 {
+  margin-left: 100px;
 }
 
+.primary.block {
+  color: var(--primary-content);
+  background-color: var(--primary);
+  display: inline-block;
+  padding: 0.2em 0.2em;
+
+}
 a {
 
-    /* color: var(--link-color); */
+    color: var(--copy);
+}
+
+
+
+{
+  --primary: #1a9fff;
+--primary-content: #000f1a;
+--primary-dark: #0086e6;
+--primary-light: #4db4ff;
+
+--secondary: #ff1a40;
+--secondary-content: #ffffff;
+--secondary-dark: #e60026;
+--secondary-light: #ff4d6b;
+
+--background: #181a1b;
+--foreground: #232729;
+--border: #3b4145;
+
+--copy: #fbfbfb;
+--copy-light: #d6d9dc;
+--copy-lighter: #9fa7ac;
+
+--success: #1aff1a;
+--warning: #ffff1a;
+--error: #ff1a1a;
+--success-content: #001a00;
+--warning-content: #1a1a00;
+--error-content: #ffffff;
 }
